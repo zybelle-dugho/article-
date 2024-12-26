@@ -22,28 +22,46 @@
         }
         
         header {
-            background-color: #ffc000;
-            color: #000;
-            padding: 20px;
-            text-align: center;
-            justify-content: center;
-        }
-        nav ul {
-  list-style: none;
-  margin: 10;
-  padding: 10;
-  display: flex;
-  justify-content: center;
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {  /* Style for the image */
+    width: 70px;  /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.logo h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav li {
-  margin-right: 20px;
+    margin-left: 20px; /* Added margin for spacing between nav items */
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
-  text-align: center;
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
 }
 
 
@@ -89,21 +107,26 @@ nav a {
     </style>
 </head>
 <body>
-  <header class="campus-article">
-    <h1>CEBU TECHNOLOGICAL UNIVERSITY-DANAO CAMPUS</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="article.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+  <header>
+    <div class="logo">
+            <img src="ctu.jpeg" alt="ctu logo" class="logo-image">
+            <h1>Cebu Technological University-Danao Campus</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
   </header>
     <div class="container">
         <h1>COLLEGE OF TECHNOLOGY</h1>
 
        <div class="picture-container">
-          <img src="cot.jpg" alt="COT">
-          <img src="cot_building.png" alt="COT BUILDING">
+          <img src="/cot.jpg" alt="COT">
+          <img src="/cot_building.png" alt="COT BUILDING">
         </div>
 
         <p>CTU-Danao's College of Technology is your gateway to a hands-on, practical education in exciting technical fields.  They offer Bachelor of Industrial Technology (BIT) programs that focus on:</p>
@@ -120,5 +143,4 @@ nav a {
     <a href="article.html" class="back-button">BACK</a>
     </div>
 </body>
-      </html>
-          
+</html>
