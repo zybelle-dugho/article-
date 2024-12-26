@@ -13,28 +13,46 @@
         }
 
         header {
-            background-color: #ffc000;
-            color: #000;
-            padding: 20px;
-            text-align: center;
-            justify-content: center;
-        }
-        nav ul {
-  list-style: none;
-  margin: 10;
-  padding: 10;
-  display: flex;
-  justify-content: center;
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {  /* Style for the image */
+    width: 70px;  /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.logo h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav li {
-  margin-right: 20px;
+    margin-left: 20px; /* Added margin for spacing between nav items */
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
-  text-align: center;
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
 }
 
         h2 {
@@ -68,35 +86,39 @@ nav a {
     </style>
 </head>
 <body>
-    <header class="campus-article">
-        <h1>CEBU TECHNOLOGICAL UNIVERSITY-DANAO CAMPUS</h1>
-        <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="article.html">Articles</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Login</a></li>
+    <header>
+      <div class="logo">
+            <img src="ctu.jpeg" alt="ctu logo" class="logo-image">
+            <h1>Cebu Technological University-Danao Campus</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
     
     <h2>CTU is a dynamic university with a wide range of programs to choose from, organized into four main areas of study:</h2>
-        <a href="coe.html"> <img src="coe.jpg" alt="School Image1">
+        <a href="/coe.html"> <img src="/coe.jpg" alt="School Image1">
         </a>
         <p><strong>COLLEGE OF ENGINEERING:</strong>  For students interested in building, designing, and solving technical problems.</p>
         
-        <a href="cot.html"> <img src="cot.jpg" alt="School Image2">
+        <a href="/cot.html"> <img src="/cot.jpg" alt="School Image2">
         </a>
         <p><strong>COLLEGE OF TECHNOLOGY:</strong> For those who love hands-on learning and practical skills in fields like automotive, computer, and electrical technology.</p>
         
-        <a href="ceas.html"> <img src="ceas.jpg" alt="School Image3">
+        <a href="/ceas.html"> <img src="/ceas.jpg" alt="School Image3">
         </a>
         <p><strong>COLLEGE OF EDUCATION ARTS AND SCIENCES:</strong>  For students passionate about teaching, exploring the arts, and gaining a strong foundation in the sciences.</p>
         
-        <a href="cme.html"> <img src="cme.jpg" alt="School Image4">
+        <a href="/cme.html"> <img src="/cme.jpg" alt="School Image4">
         </a>
         <p><strong>COLLEGE OF MANAGEMENT AND ENTREPRENEURSHIP:</strong>  For aspiring business leaders and entrepreneurs who want to learn about managing organizations and starting their own ventures.</p>
         
         <p>With these four colleges, CTU offers a diverse and exciting learning environment for students of all interests and aspirations.</p>
     </div>
 </body>
-        </html>
-          
+</html>
