@@ -22,28 +22,46 @@
         }
         
         header {
-            background-color: #ffc000;
-            color: #000;
-            padding: 20px;
-            text-align: center;
-            justify-content: center;
-        }
-        nav ul {
-  list-style: none;
-  margin: 10;
-  padding: 10;
-  display: flex;
-  justify-content: center;
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {  /* Style for the image */
+    width: 70px;  /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.logo h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav li {
-  margin-right: 20px;
+    margin-left: 20px; /* Added margin for spacing between nav items */
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
-  text-align: center;
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
 }
 
 
@@ -89,21 +107,26 @@ nav a {
     </style>
 </head>
 <body>
-  <header class="campus-article">
-    <h1>CEBU TECHNOLOGICAL UNIVERSITY-DANAO CAMPUS</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="article.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+  <header>
+    <div class="logo">
+            <img src="ctu.jpeg" alt="ctu logo" class="logo-image">
+            <h1>Cebu Technological University-Danao Campus</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
   </header>
     <div class="container">
         <h1>COLLEGE OF ENGINEERING</h1>
 
          <div class="picture-container">
-          <img src="coe.jpg" alt="COE">
-          <img src="coe_building.png" alt="COE BUILDING">
+          <img src="/coe.jpg" alt="COE">
+          <img src="/coe_building.png" alt="COE BUILDING">
         </div>
         
         
@@ -113,36 +136,36 @@ nav a {
         <p><strong>Bachelor of Science in Industrial Engineering (BSIE):</strong>
         Learn how to make factories and businesses run smoothly and efficiently.</p>
         <div class="picture-container">
-          <img src="ie_logo.jpg" alt="IE logo">
-          <img src="ie_student.jpg" alt="IE student">
+          <img src="/ie_logo.jpg" alt="IE logo">
+          <img src="/ie_student.jpg" alt="IE student">
         </div>
         
         <p><strong>Bachelor of Science in Mechanical Engineering (BSME):</strong>
         Design, build, and improve machines and systems, from cars to robots.</p>
         <div class="picture-container">
-          <img src="me_logo.jpg" alt="ME logo">
-          <img src="me_student.jpg" alt="ME student">
+          <img src="/me_logo.jpg" alt="ME logo">
+          <img src="/me_student.jpg" alt="ME student">
         </div>
         
         <p><strong>Bachelor of Science in Civil Engineering (BSCE):</strong>
         Shape the world around us by designing buildings, bridges, and infrastructure.</p>
         <div class="picture-container">
-          <img src="ce_logo.jpg" alt="CE logo">
-          <img src="ce_student.jpg" alt="CE student">
+          <img src="/ce_logo.jpg" alt="CE logo">
+          <img src="/ce_student.jpg" alt="CE student">
         </div>
         
         <p><strong>Bachelor of Science in Electrical Engineering (BSEE):</strong>
         Work with electricity and electronics, powering everything from homes to computers.</p>
         <div class="picture-container">
-          <img src="ee_logo.jpg" alt="EE logo">
-          <img src="ee_student.jpg" alt="EE student">
+          <img src="/ee_logo.jpg" alt="EE logo">
+          <img src="/ee_student.jpg" alt="EE student">
         </div>
         
         <p><strong>Bachelor of Science in Computer Engineering (BSCpE):</strong>
         Combine computer science and electrical engineering to design and build the hardware and software that drives our digital world.</p>
         <div class="picture-container">
-          <img src="cpe_logo.jpg" alt="CpE logo">
-          <img src="cpe_student.jpg" alt="CpE student">
+          <img src="/cpe_logo.jpg" alt="CpE logo">
+          <img src="/cpe_student.jpg" alt="CpE student">
         </div>
         
         <p>With these diverse programs, CTU-Danao's College of Engineering is a great place to start your journey towards a rewarding career in engineering!</p>
@@ -151,5 +174,4 @@ nav a {
     </div>
     
 </body>
-      </html>
-          
+</html>
