@@ -6,11 +6,16 @@
     <title>COLLEGE OF EDUCATION ARTS AND SCIENCES</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    /* Removed background-color, we'll use a background image instead */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-image: url('background.png'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
         }
 
         .container {
